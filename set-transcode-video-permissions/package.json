@@ -1,0 +1,15 @@
+{
+  "name": "set-transcode-video-permissions",
+  "version": "1.0.0",
+  "description": "This Lambda function will set permissions to make transcoded videos publically available",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "aws lambda update-function-code --function-name arn:aws:lambda:us-east-1:921598642698:function:set-transcode-video-permissions --zip-file fileb://Lambda-Deployment.zip",
+    "predeploy": "7z a -r -x!*.zip -x!*.log Lambda-Deployment.zip *"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.818.0"
+  },
+  "author": "Shahid ul Islam",
+  "license": "BSD-2-Clause"
+}

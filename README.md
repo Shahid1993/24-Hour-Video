@@ -10,6 +10,13 @@ Instructions for Deployment
 
 
 
+Notes
+---
+
+- For enabling the `s3.putObjectAcl` function to change ACL of S3 objects, we should enable objects to be public in the bucket permissions.
+
+
+
 
 
 Issues
