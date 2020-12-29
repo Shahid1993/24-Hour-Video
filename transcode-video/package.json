@@ -6,10 +6,10 @@
   "scripts": {
     "test": "run-local-lambda --file index.js --event tests/event.json",
     "deploy": "aws lambda update-function-code --function-name arn:aws:lambda:us-east-1:921598642698:function:transcode-video --zip-file fileb://Lambda-Deployment.zip",
-    "predeploy": "7z a -r -x!*.zip -x!*.json -x!*.log Lambda-Deployment.zip *"
+    "predeploy": "7z a -r -x!*.zip -x!*.log Lambda-Deployment.zip *"
   },
   "dependencies": {
-    "aws-sdk": "latest"
+    "aws-sdk": "^2.818.0"
   },
   "author": "Shahid ul Islam",
   "license": "BSD-2-Clause",
