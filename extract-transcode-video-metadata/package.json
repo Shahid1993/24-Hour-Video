@@ -1,0 +1,15 @@
+{
+  "name": "extract-transcode-video-metadata",
+  "version": "1.0.0",
+  "description": "This Lambda function will extract metadata from a file using ffmpeg",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "aws lambda update-function-code --function-name arn:aws:lambda:us-east-1:921598642698:function:extract-transcode-video-metadata --zip-file fileb://Lambda-Deployment.zip",
+    "predeploy": "7z a -r -x!*.zip -x!*.log Lambda-Deployment.zip *"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.818.0"
+  },
+  "author": "Shahid ul Islam",
+  "license": "BSD-2-Clause"
+}
